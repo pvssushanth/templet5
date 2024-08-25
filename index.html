@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: violet;
+    }
+    .container{
+       position: absolute;
+       right: 500px;
+       top:40px;
+       animation: bounceOut 1.5s ease-in-out 0.5s
+    }
+    @keyframes bounceOut{
+      0%{
+            top:-100px
+        }
+    }
+    img{
+        border-radius: 60%;
+        position: relative;
+          left: 340px;
+          top:100px;
+          width: 200px;
+          height: 200px;
+          padding: 10px;
+        }
+        p{
+            height: 120px;
+            position: relative;
+            top: 100px;
+            font-size: 30px;
+            text-align: center;
+            width: 1100px;
+            transition: all 0.3sec ease-in-out 0.5;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            font-weight: bold;
+            animation: rotatein 1.5s ease-in-out 0.5;
+            left: 60px;
+        }
+        @keyframes rotatein{
+            0% {
+                transform:rotate(0deg)
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg) translateX(500px);
+            }
+
+        }
+</style>
+<body>
+    <div class="container">PROJECT EXPERIENCE</div>
+    <img src="./happiest person.jpeg" alt="" >
+    <img src="./mountain1.jpeg" alt="">
+    <img src="./mountain2.jpeg" alt="">
+    <p>In pellentesque massa placerat duis ultricies. Mattis molestie a iaculis at. <br> Lorem ipsum dolor sit  amet consectetur. Et ligula ullamcorper malesuada <br> proin libero nunc consequat interdum varius orci nulla.</p>
+</body>
+</html>
